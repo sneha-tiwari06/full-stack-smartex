@@ -9,7 +9,7 @@ import "../style.scss";
 const StarSpeaks = () => {
   const state = useLocation().state;
   const navigate = useNavigate();
-  const baseURL = 'https://ecis.in/smartex-react/upload/';
+  const baseURL = 'http://localhost:3000/upload/';
 
   const [speaker_name, setSpeakerName] = useState(state?.speaker_name || "");
   const [designation, setDesignation] = useState(state?.designation || "");

@@ -8,7 +8,7 @@ import "../style.scss";
 const Ceremony = () => {
   const state = useLocation().state;
   const navigate = useNavigate();
-  const baseURL = 'https://ecis.in/smartex-react/upload/';
+  const baseURL = 'http://localhost:3000/upload/';
 
   const [ceremony_name, setCeremonyName] = useState(state?.ceremony_name || "");
   const [ceremony_date, setCeremonyDate] = useState(

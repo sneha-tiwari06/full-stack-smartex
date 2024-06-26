@@ -9,7 +9,7 @@ import "../style.scss";
 const Upcoming = () => {
   const state = useLocation().state;
   const navigate = useNavigate();
-  const baseURL = 'https://ecis.in/smartex-react/upload/';
+  const baseURL = 'http://localhost:3000/upload/';
 
   const [title, setTitle] = useState(state?.title || "");
   const [alt, setAlt] = useState(state?.alt || "");

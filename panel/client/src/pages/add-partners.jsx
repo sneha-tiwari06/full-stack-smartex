@@ -10,7 +10,7 @@ const Partners = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const existingData = location.state || {};
-  const baseURL = 'https://ecis.in/smartex-react/upload/';
+  const baseURL = 'http://localhost:3000/upload/';
 
   const [alt, setAlt] = useState(existingData.alt || "");
   const [files, setFiles] = useState([]);
